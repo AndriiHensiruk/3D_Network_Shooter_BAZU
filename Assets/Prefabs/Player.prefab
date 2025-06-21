@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3628788011099952273}
   - component: {fileID: 2330806166578674763}
   - component: {fileID: 3306749464013577647}
-  - component: {fileID: 226905852063462216}
+  - component: {fileID: 6103823901484025164}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -32,14 +32,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3891660651835276352}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8964432, y: 1.04, z: -4.36}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.5, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4634683875807040148}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &6807969255047792580
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a5a0553658cda0342a74ba78306cb808, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health:
     m_InternalValue: 100
---- !u!114 &226905852063462216
+--- !u!114 &6103823901484025164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3891660651835276352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: e39780f2879c1f2439ca4fd432c11498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseUnreliableDeltas: 0
@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 4634683875807040148}
   - component: {fileID: 7937120286902909826}
   - component: {fileID: 7339688987381583650}
+  - component: {fileID: 8146144109155528432}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -310,3 +311,15 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7961798950545087149}
   m_Enabled: 1
+--- !u!114 &8146144109155528432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961798950545087149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89b514d00e29664fab770857160b3cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -374,6 +374,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.62f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Bullet.cs"
+"Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/ClientNetworkTransform.cs"
 "Assets/Scripts/EnemyAI.cs"
 "Assets/Scripts/EnemySpawner.cs"
 "Assets/Scripts/Health.cs"

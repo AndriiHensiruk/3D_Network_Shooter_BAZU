@@ -7,14 +7,15 @@ public class EnemySpawner : NetworkBehaviour
     public GameObject enemyPrefab;
     public float spawnInterval = 5f;
 
-    void Start()
+    public override void OnNetworkSpawn()
     {
         if (IsServer)
         {
-            Debug.Log("Spawner started");
+            Debug.Log("Spawner active on server");
             StartCoroutine(SpawnLoop());
         }
     }
+
 
     IEnumerator SpawnLoop()
     {
