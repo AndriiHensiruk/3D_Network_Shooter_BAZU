@@ -4,6 +4,7 @@ using UnityEngine;
 public class Bullet : NetworkBehaviour
 {
     private int damage;
+    public GameObject hitEffectPrefab;
 
     public void Init(int dmg)
     {
@@ -15,13 +16,17 @@ public class Bullet : NetworkBehaviour
     {
         if (!IsServer) return;
 
-        Health health = other.GetComponent<Health>();
-        if (health != null)
+        if (hitEffectPrefab != null)
         {
-            health.ApplyDamageServerRpc(damage);
+            GameObject vfx = Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(vfx, 1f); 
         }
 
-        DestroySelf();
+        Health hp = other.GetComponent<Health>();
+        if (hp != null)
+            hp.ApplyDamageServerRpc(damage);
+
+            DestroySelf();
     }
 
     void DestroySelf()
